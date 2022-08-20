@@ -120,10 +120,7 @@ section div.personal_infos {
     margin: 0;
     padding: 0;
     background-color: #fafafa;
-}
-
-.social_list li:nth-child(2) {
-    padding: 0 32px;
+    gap: 32px;
 }
 
 .social_list li a::before {
@@ -133,10 +130,6 @@ section div.personal_infos {
     height: 32px;
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-.instagram_link a:before {
-    background-image: url("/img/insta.svg");
 }
 
 .linkedin_link a:before {
