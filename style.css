@@ -1,0 +1,224 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Libre Baskerville', serif;
+    margin: 0;
+}
+
+a,
+button {
+    cursor: revert;
+}
+
+ol,
+ul,
+menu {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1280px;
+    position: relative;
+    margin: 0 auto;
+    width: 100% !important;
+    padding: 0 16px;
+}
+
+.main_content {
+    display: flex;
+    padding: 48px;
+    justify-content: center;
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    max-width: 100vw;
+    position: relative;
+    right: 50%;
+    width: 100vw;
+}
+
+.main_content::before {
+    content: '';
+    display: block;
+    width: 40%;
+    height: 625px;
+    background-color: #b2befe;
+    z-index: -2;
+    position: absolute;
+    margin: -48px auto;
+    left: 0;
+}
+
+section.main_content>div {
+    width: 375px;
+    height: 525px;
+}
+
+section div.personal_infos {
+    text-align: center;
+    position: relative;
+    margin: 0px 24px 0 40px;
+    background: #ced6ff;
+    box-shadow: -10px 8px 22px 0px rgb(0 0 0 / 16%);
+}
+
+.personal_infos img {
+    width: 188px;
+    height: 188px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #fafafa;
+    margin: 40px 0;
+}
+
+.personal_infos h2,
+.personal_infos h3,
+.job_info h2,
+.job_info h3 {
+    margin: 0;
+}
+
+.personal_infos h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.personal_infos h2::after {
+    content: '';
+    display: flex;
+    width: 104px;
+    height: 3px;
+    background: #5e76fb;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 16px auto 0;
+}
+
+.personal_infos h3 {
+    font-size: 1.2em;
+}
+
+.social_list {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 56px;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+}
+
+.social_list li:nth-child(2) {
+    padding: 0 32px;
+}
+
+.social_list li a::before {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.instagram_link a:before {
+    background-image: url("/img/insta.svg");
+}
+
+.linkedin_link a:before {
+    background-image: url("img/linkedin.svg");
+}
+
+.gitHub_link a:before {
+    background-image: url("img/github.svg");
+}
+
+.job_info {
+    padding: 24px 8px;
+}
+
+.job_info h2 {
+    font-size: 6em;
+}
+
+.job_info h3 {
+    font-size: 1.2em;
+}
+
+.links_buttons {
+    margin: 24px 0;
+    display: flex;
+    gap: 40px;
+}
+
+.links_buttons button,
+.links_buttons button a {
+    width: 132px;
+    height: 32px;
+}
+
+.links_buttons button {
+    font-size: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+}
+
+.links_buttons button a {
+    text-decoration: none;
+}
+
+.links_buttons button:first-child a,
+.links_buttons button:hover:nth-child(2) a {
+    color: #fafafa;
+}
+
+.links_buttons button:first-child:hover {
+    background: #fafafa;
+    border: 1px solid #7a8efc;
+}
+
+.links_buttons button:first-child:hover a,
+.links_buttons button:nth-child(2),
+.links_buttons button:nth-child(2) a {
+    color: #7a8efc;
+}
+
+.links_buttons button:nth-child(2) {
+    background: #fafafa;
+    border: 1px solid #7a8efc;
+}
+
+.links_buttons button:nth-child(2):hover,
+.links_buttons button:first-child {
+    background: #7a8efc;
+    border: none;
+    color: #fafafa;
+    outline-offset: 2px;
+    outline: 1px solid #7a8efc;
+    transition: outline-ffset, .3s;
+}
+
+.social_list li a:hover:before {
+    filter: brightness(0) saturate(100%) invert(47%) sepia(75%) saturate(3367%) hue-rotate(215deg) brightness(100%) contrast(98%);
+}
+
+.job_info p {
+    margin: 32px 0 0;
+    font-size: 14px;
+}
