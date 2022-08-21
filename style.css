@@ -215,3 +215,15 @@ section div.personal_infos {
     margin: 32px 0 0;
     font-size: 14px;
 }
+
+@media(max-width: 768px) {
+
+    .main_content {
+        display: block;
+    }
+
+    section.main_content>div {
+        width: 100%;
+        margin: 0;
+    }
+}
